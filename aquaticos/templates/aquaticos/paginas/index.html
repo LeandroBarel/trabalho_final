@@ -1,0 +1,19 @@
+{% extends 'global/paginas/index_base.html' %}
+{% load static %}
+
+{% block glb_bootstrap %}{% endblock gbl_bootstrap %}
+{% block glb_js %}{% endblock glb_js %}
+
+{% block app_css_js %}
+    <link rel="stylesheet" href="{% static 'aquaticos/css/estilos.css' %}">
+{% endblock app_css_js %}
+
+{% block app_titulo %}aquaticos{% endblock app_titulo %}
+
+{% block aoo_menu %}
+    {% include 'aquaticos/parciais/menu.html' %}
+{% endblock app_menu %}
+
+{% block app_conteudo %}
+    <p>eu sou um coteudo sendo carregado do arquivo<br>/aquaticos/templates/aquaticos/paginas/index.html</p>
+{% endblock app_conteudo %}
