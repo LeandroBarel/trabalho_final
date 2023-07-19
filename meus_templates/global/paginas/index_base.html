@@ -1,38 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>{% block app_titulo %}BASE{% endblock app_titulo %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block glb_jquery %}
-        <script type="test/javascript" src="{% static 'global/js/jquery/jquery-v3.7.0.js' %}"></script>
-    {% endblock gjb_jquery %}
+    <script type="test/javascript" src="{% static 'global/js/jquery/jquery-v3.7.0.js' %}"></script>
+    {% endblock glb_jquery %}
     {% block glb_bootstrap %}
-        {% include 'global/parciais/bootstrap.html' %}
+    {% include 'global/parciais/bootstrap.html' %}
     {% endblock glb_bootstrap %}
 
     {% block glb_css %}
-        <link href="{% static ' global/css/estilos.css' %}" rel="stylesheet">
+    <link href="{% static ' global/css/estilos.css' %}" rel="stylesheet">
     {% endblock glb_css %}
     {% block glb_js %}
-        <script type="test/javascript" src="{% static 'global/js/scripts.js' %}"></script>
+    <script type="test/javascript" src="{% static 'global/js/scripts.js' %}"></script>
     {% endblock glb_js %}
     {% block app_css_js %}{% endblock app_css_js %}
-    </head>
+</head>
+
 <body>
-    {% block glb_menu %} 
-        {% include 'global/parciais/menu.html' %}
+    {% block glb_menu %}
+    {% include 'global/parciais/menu.html' %}
     {% endblock glb_menu %}
     {% block app_menu %}{% endblock app_menu %}
 
     {% block gbl_header %}
-        {% include 'global/parciais/header.html' %}
+    {% include 'global/parciais/header.html' %}
     {% endblock gbl_header %}
     {% block app_conteudo %}
-        <p>Sou um paragrafo gerado pelo /meus_templates/global/paginas/index_base.html</p>
+    <p>Sou um paragrafo gerado pelo /meus_templates/global/paginas/index_base.html</p>
     {% endblock app_conteudo %}
     {% block glb_footer %}
-        {% include 'global/parciais/footer.html' %}
+    {% include 'global/parciais/footer.html' %}
     {% endblock glb_footer %}
 </body>
+
 </html>

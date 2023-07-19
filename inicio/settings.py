@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR/ 'meus_templates',
+            BASE_DIR / 'meus_templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -121,8 +121,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATCFILES_DIRS =[ 
-    BASE_DIR/ 'meus_statics',
+STATCFILES_DIRS = [
+    BASE_DIR / 'meus_statics',
 ]
 STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/midias/'

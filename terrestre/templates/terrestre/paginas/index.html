@@ -1,8 +1,8 @@
 {% extends 'global/paginas/index_base.html' %}
 {% load static %}
 
-{% block glb_bootstrap %}{% endblock gbl_bootstrap %}
-{% block glb_js %}{% endblock glb_js %}
+{% block gbl_bootstrap %}{% endblock gbl_bootstrap %}
+{% block gbl_js %}{% endblock gbl_js %}
 
 {% block app_css_js %}
     <link rel="stylesheet" href="{% static 'terrestre/css/estilos.css' %}">
@@ -10,7 +10,7 @@
 
 {% block app_titulo %}Terrestre{% endblock app_titulo %}
 
-{% block aoo_menu %}
+{% block app_menu %}
     {% include 'terrestre/parciais/menu.html' %}
 {% endblock app_menu %}
 

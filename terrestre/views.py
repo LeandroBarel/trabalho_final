@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
-def views_index(request):
+
+def view_index(request):
     return render(request, 'terrestre/paginas/index.html')
