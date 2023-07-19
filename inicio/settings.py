@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # APPs
-    'terrestre'
+    'terrestre',
+    'aquaticos'
 ]
 
 MIDDLEWARE = [
