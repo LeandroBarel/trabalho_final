@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6hon49r=p)!6$#w%pj0xheu04(q5yz9gj3$y*x$awd%a54ei3&'
+SECRET_KEY = 'django-insecure-mebulqg8l#niv#-3*xd4_xg$3v4y-$z#ncz05z6wszsk#-7z98'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # APPs
+    'terrestre',
+    'aquaticos'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,9 @@ ROOT_URLCONF = 'inicio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'meus_templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -117,6 +122,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATCFILES_DIRS = [
+    BASE_DIR / 'meus_statics',
+]
+STATIC_ROOT = BASE_DIR / 'static'
+MEDIA_URL = '/midias/'
+MEDIA_ROOT = BASE_DIR = BASE_DIR / 'midias'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

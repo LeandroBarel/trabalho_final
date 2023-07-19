@@ -1,0 +1,19 @@
+{% extends 'global/paginas/index_base.html' %}
+{% load static %}
+
+{% block gbl_bootstrap %}{% endblock gbl_bootstrap %}
+{% block gbl_js %}{% endblock gbl_js %}
+
+{% block app_css_js %}
+    <link rel="stylesheet" href="{% static 'terrestre/css/estilos.css' %}">
+{% endblock app_css_js %}
+
+{% block app_titulo %}Terrestre{% endblock app_titulo %}
+
+{% block app_menu %}
+    {% include 'terrestre/parciais/menu.html' %}
+{% endblock app_menu %}
+
+{% block app_conteudo %}
+    <p>eu sou um coteudo sendo carregado do arquivo<br>/terrestre/templates/terrestre/paginas/index.html</p>
+{% endblock app_conteudo %}
