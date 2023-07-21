@@ -2,19 +2,17 @@
 {% load static %}
 
 {% comment %} {% block gbl_bootstrap %}{% endblock gbl_bootstrap %}
-{% block gbl_js %}{% endblock gbl_js %}
+{% block gbl_js %}{% endblock gbl_js %} {% endcomment %}
 
 {% block app_css_js %}
     <link rel="stylesheet" href="{% static 'terrestre/css/estilos.css' %}">
-{% endblock app_css_js %} {% endcomment %}
+{% endblock app_css_js %}
 
 {% block app_titulo %}<h1>Terrestre</h1>{% endblock app_titulo %}
 
 {% block app_menu %}
     {% include 'terrestre/parciais/header.html' %}
     {% include 'terrestre/parciais/footer.html' %}
-    {% comment %} <img src="{% static 'terrestre/elefante.jpg' %}" width=500px> {% endcomment %}
-    
 {% endblock app_menu %}
 
 {% block app_conteudo %}
