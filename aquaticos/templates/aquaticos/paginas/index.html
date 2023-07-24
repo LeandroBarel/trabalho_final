@@ -1,18 +1,16 @@
-{% comment %} {% extends 'global/paginas/index_base.html' %} {% endcomment %}
+{% extends 'global/paginas/index_base.html' %}
 {% load static %}
 
-{% block glb_bootstrap %}{% endblock glb_bootstrap %}
+{% block glb_bootstrap %}{% endblock gbl_bootstrap %}
 {% block glb_js %}{% endblock glb_js %}
 
-{% comment %} {% block app_css_js %}
+{% block app_css_js %}
     <link rel="stylesheet" href="{% static 'aquaticos/css/estilos.css' %}">
-{% endblock app_css_js %} {% endcomment %}
+{% endblock app_css_js %}
 
-{% block app_titulo %} {% endblock app_titulo %}
+{% block app_titulo %}aquaticos{% endblock app_titulo %}
 
-{% block app_menu %} 
-    {% include 'aquaticos/parciais/header.html' %}
-    {% include 'aquaticos/parciais/footer.html' %}
+{% block aoo_menu %}
     {% include 'aquaticos/parciais/menu.html' %}
 {% endblock app_menu %}
 
