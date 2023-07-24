@@ -11,6 +11,8 @@ urlpatterns = [
     path('', include('home.urls')),
     path('terrestre/', include('terrestre.urls')),
     path('aquaticos/', include('aquaticos.urls')),
+    path('voadores/', include('voadores.urls')),
 ]
+
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
