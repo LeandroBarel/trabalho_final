@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home',
     'terrestre',
     'aquaticos',
+    'voadores',
 ]
 
 MIDDLEWARE = [

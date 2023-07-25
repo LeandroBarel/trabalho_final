@@ -1,0 +1,21 @@
+{% comment %} {% extends 'global/paginas/index_base.html' %} {% endcomment %}
+{% load static %}
+
+{% block glb_bootstrap %}{% endblock glb_bootstrap %}
+{% block glb_js %}{% endblock glb_js %}
+
+{% comment %} {% block app_css_js %}
+    <link rel="stylesheet" href="{% static 'aquaticos/css/estilos.css' %}">
+{% endblock app_css_js %} {% endcomment %}
+
+{% block app_titulo %} {% endblock app_titulo %}
+
+{% block app_menu %} 
+    {% include 'voadores/parciais/header.html' %}
+    
+    {% include  'voadores/parciais/footer.html' %}
+    {% include 'voadores/parciais/menu.html' %}
+{% endblock app_menu %}
+
+{% block app_conteudo %}
+{% endblock app_conteudo %}
